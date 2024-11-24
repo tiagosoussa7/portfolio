@@ -1,6 +1,9 @@
 import { JetBrains_Mono, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
+//componets
+import Header from "@/components/Header";
+
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -24,6 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${jetBrains.variable} ${bebasNeue.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
