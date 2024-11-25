@@ -5,13 +5,14 @@ import Link from "next/link";
 //components
 import Nav from "./Nav";
 import Mobile from "./Mobile";
+import TopLeftImg from "./TopLeftImg";
 
 export const Logo = () => {
   return (
     <Link href="/">
       <h1 className="text-5xl font-secondary">
-        <span className="text-accent">Tiago</span> <span>italo</span>{" "}
-        <span className="text-accent">.</span>
+        <span>Tiago</span> <span className="text-accent">italo</span>{" "}
+        <span>.</span>
       </h1>
     </Link>
   );

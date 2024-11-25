@@ -5,6 +5,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import Effect from "@/components/Effect";
+import TopLeftImg from "@/components/TopLeftImg";
+import BottomRightImg from "@/components/BottomRightImg";
 
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
@@ -29,7 +31,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${jetBrains.variable} ${bebasNeue.variable} antialiased`}
       >
+        <TopLeftImg />
         <Header />
+        <BottomRightImg />
         <Effect />
         <PageTransition>{children}</PageTransition>
       </body>
