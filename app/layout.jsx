@@ -3,6 +3,8 @@ import "./globals.css";
 
 //componets
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import Effect from "@/components/Effect";
 
 const jetBrains = JetBrains_Mono({
   subsets: ["latin"],
@@ -28,7 +30,8 @@ export default function RootLayout({ children }) {
         className={`${jetBrains.variable} ${bebasNeue.variable} antialiased`}
       >
         <Header />
-        {children}
+        <Effect />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
