@@ -5,7 +5,6 @@ import Link from "next/link";
 //components
 import Nav from "./Nav";
 import Mobile from "./Mobile";
-import TopLeftImg from "./TopLeftImg";
 
 export const Logo = () => {
   return (
