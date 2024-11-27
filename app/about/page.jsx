@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-//"text-2xl leading-[44px] font-semibold"
 const About = () => {
   return (
     <section className="relative py-12">
