@@ -1,5 +1,6 @@
 "use client";
 
+import Bulb from "@/components/Bulb";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -101,6 +102,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Bulb />
         </motion.div>
       </div>
     </section>

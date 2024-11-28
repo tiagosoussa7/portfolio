@@ -14,7 +14,7 @@ const journey = [
   {
     type: "graduation",
     institution: "Unicesumar",
-    logoUrl: "/unicesumar-logo.png",
+    logoUrl: "/resume/unicesumar-logo.png",
     position: "Anásile e desenvolvimento de sistemas",
     duration: "Abr 2022 - Ago 2024",
     description:
@@ -23,7 +23,7 @@ const journey = [
   {
     type: "graduation",
     institution: "Estácio - Fic",
-    logoUrl: "/ficEstacio-logo.png",
+    logoUrl: "/resume/ficEstacio-logo.png",
     position: "Banco de dados",
     duration: "Ago 2023 - Dec 2025",
     description:
@@ -34,7 +34,7 @@ const journey = [
   {
     type: "courses",
     institution: "Cubos Academy",
-    logoUrl: "/cubos-logo.png",
+    logoUrl: "/resume/cubos-logo.png",
     qualification: "Desenvolvedor Back-End JavaScript",
     duration: "Ago 2023 - Dec 2023",
     description:
@@ -43,7 +43,7 @@ const journey = [
   {
     type: "courses",
     institution: "Dio",
-    logoUrl: "/dio-logo.png",
+    logoUrl: "/resume/dio-logo.png",
     qualification: "Desenvolvedor Front-end JavaScript",
     duration: "Out 2024 - Dec 2024",
     description:

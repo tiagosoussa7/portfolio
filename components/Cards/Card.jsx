@@ -22,7 +22,7 @@ const Card = ({
             xl:justify-between items-center px-6 md:px-[84px] rounded-tl-[8px] rounded-tr-[8px]"
           >
             <div className="flex gap-2">
-              <Image src="/img0.svg" width={16} height={16} alt="" />
+              <Image src="/resume/hexagon.svg" width={16} height={16} alt="" />
               <h3 className="text-lg font-semibold text-accent">
                 {type === "graduation"
                   ? position

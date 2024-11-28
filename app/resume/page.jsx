@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Cards from "@/components/Cards/Cards";
+import Bulb from "@/components/Bulb";
 
 const Resume = () => {
   return (
@@ -17,6 +18,7 @@ const Resume = () => {
           minha jornada profissional
         </div>
         <Cards />
+        <Bulb />
       </motion.div>
     </section>
   );
