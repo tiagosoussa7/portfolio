@@ -14,7 +14,7 @@ const journey = [
   {
     type: "graduation",
     institution: "Unicesumar",
-    logoUrl: "/resume/unicesumar-logo.png",
+    logoUrl: "/resume/logo-unicesumar.png",
     position: "Anásile e desenvolvimento de sistemas",
     duration: "Abr 2022 - Ago 2024",
     description:
@@ -43,7 +43,7 @@ const journey = [
   {
     type: "courses",
     institution: "Dio",
-    logoUrl: "/resume/dio-logo.png",
+    logoUrl: "/resume/logo-dio.png",
     qualification: "Desenvolvedor Front-end JavaScript",
     duration: "Out 2024 - Dec 2024",
     description:
@@ -125,14 +125,23 @@ const Cards = () => {
         className="w-full flex flex-col items-center"
       >
         <TabsList className="max-w-max mb-[30px]">
-          <TabsTrigger value="graduation">Graduações</TabsTrigger>
-          <TabsTrigger value="courses">Cursos</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
+          <TabsTrigger value="graduation" className="w-[120px]">
+            Graduações
+          </TabsTrigger>
+          <TabsTrigger value="courses" className="w-[120px]">
+            Cursos
+          </TabsTrigger>
+          <TabsTrigger value="skills" className="w-[120px]">
+            Skills
+          </TabsTrigger>
+          <TabsTrigger value="/" className="w-[120px]">
+            Soft skills
+          </TabsTrigger>
         </TabsList>
 
         {/* graduation */}
         <TabsContent value="graduation" className="w-full">
-          <ScrollArea className="h-[460px]">
+          <ScrollArea className="h-[480px] p-3">
             <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -154,7 +163,7 @@ const Cards = () => {
 
         {/* courses */}
         <TabsContent value="courses" className="w-full">
-          <ScrollArea className="h-[460px]">
+          <ScrollArea className="h-[480px] p-3">
             <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -176,7 +185,7 @@ const Cards = () => {
 
         {/* skill */}
         <TabsContent value="skills" className="w-full">
-          <ScrollArea className="h-[460px]">
+          <ScrollArea className="h-[480px] p-3">
             <AnimatePresence>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

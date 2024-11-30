@@ -12,7 +12,7 @@ const BottomRightImg = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 2.2, duration: 1.2, ease: "easeInOut" },
+          transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
         }}
         className="w-[200px] xl:w-[300px] fixed right-0 bottom-0 
         mix-blend-color-dodge animate-pulse z-10"

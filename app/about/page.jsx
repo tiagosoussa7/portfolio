@@ -60,8 +60,8 @@ const About = () => {
 
             {/* text */}
             <div
-              className="text-center lg:text-left w-full lg:w-[50%] mx-auto lg:mx-0
-            flex flex-col gap-4"
+              className="text-center lg:text-left w-full lg:w-[50%] mx-auto lg:mx-0 
+            flex flex-col gap-4 px-3"
             >
               <div>
                 <h1 className="text-5xl font-secondary">Me chamo Tiago</h1>
@@ -78,7 +78,7 @@ const About = () => {
               </p>
 
               {/* infor items */}
-              <div className="grid grid-cols-2 md:grid-cols-4  gap-10 max-w-max mx-auto lg:mx-0">
+              <div className="grid grid-cols-2 md:grid-cols-4  gap-12 max-w-max mx-auto lg:mx-0">
                 {/* item 1 */}
                 <div className="max-w-max">
                   <div className="font-secondary text-accent">Front-end</div>
@@ -102,8 +102,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Bulb />
         </motion.div>
+        <Bulb />
       </div>
     </section>
   );

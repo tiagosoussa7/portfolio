@@ -1,6 +1,5 @@
 "use client";
 
-import { Icon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -10,12 +9,14 @@ import {
   HiFolder,
   HiEnvelope,
 } from "react-icons/hi2";
+import { FaScroll } from "react-icons/fa";
 
 export const links = [
   { name: "início", path: "/", Icon: <HiHome /> },
   { name: "sobre", path: "/about", Icon: <HiUser /> },
-  { name: "resumo", path: "/resume", Icon: <HiRectangleGroup /> },
+  { name: "qualificações", path: "/qualification", Icon: <HiRectangleGroup /> },
   { name: "portfolio", path: "/portfolio", Icon: <HiFolder /> },
+  { name: "certificados", path: "/certificate", Icon: <FaScroll /> },
   { name: "contato", path: "/contact", Icon: <HiEnvelope /> },
 ];
 const Nav = () => {

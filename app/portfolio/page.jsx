@@ -19,7 +19,6 @@ import Link from "next/link";
 
 //components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
-import Bulb from "@/components/Bulb";
 
 const projects = [
   {
@@ -161,7 +160,7 @@ const Portfolio = () => {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-secondary flex justify-center items-center group">
-                        <BsArrowUpRight className="text-3xl group-hover:text-accent" />
+                        <BsArrowUpRight className="text-3xl group-hover:text-accent  group-hover:rotate-45 transition-all duration-500" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Deploy</p>

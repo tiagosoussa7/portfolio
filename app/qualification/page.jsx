@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Cards from "@/components/Cards/Cards";
 import Bulb from "@/components/Bulb";
 
-const Resume = () => {
+const Qualification = () => {
   return (
     <section className="container mx-auto">
       <motion.div
@@ -18,10 +18,10 @@ const Resume = () => {
           minha jornada profissional
         </div>
         <Cards />
-        <Bulb />
       </motion.div>
+      <Bulb />
     </section>
   );
 };
 
-export default Resume;
+export default Qualification;
