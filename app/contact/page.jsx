@@ -217,7 +217,14 @@ const Contact = () => {
           </div>
         </motion.div>
         {/* image */}
-        <div className="hidden lg:flex relative w-[620px] h-[550px] opacity-60 animate-pulse mix-blend-color-dodge rounded-xl -right-14 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 2.2, duration: 1.2, ease: "easeInOut" },
+          }}
+          className="hidden lg:flex relative w-[620px] h-[550px] opacity-60 mix-blend-color-dodge rounded-xl -right-14 overflow-hidden"
+        >
           <Image
             src="/contact/office1.png"
             className="object-cover"
@@ -225,7 +232,7 @@ const Contact = () => {
             quality={100}
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

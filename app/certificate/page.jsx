@@ -18,46 +18,11 @@ const data = [
   },
   {
     href: "",
-    category: "graduação",
-    img: "/certificate/thumb-2.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "frontend",
-    img: "/certificate/thumb-3.png",
-    title: "Bootcamp hy happy",
-  },
-  {
-    href: "",
     category: "frontend",
     img: "/certificate/thumb-4.png",
     title: "Bootcamp banco inter",
   },
-  {
-    href: "",
-    category: "frontend",
-    img: "/certificate/thumb-4.png",
-    title: "Bootcamp banco inter",
-  },
-  {
-    href: "",
-    category: "frontend",
-    img: "/certificate/thumb-4.png",
-    title: "Bootcamp banco inter",
-  },
-  {
-    href: "",
-    category: "backend",
-    img: "/certificate/thumb-5.png",
-    title: "Desenvolvedor javaScript",
-  },
-  {
-    href: "",
-    category: "backend",
-    img: "/certificate/thumb-6.png",
-    title: "Bootcamp nubank",
-  },
+
   {
     href: "",
     category: "backend",
@@ -69,18 +34,6 @@ const data = [
     category: "fullstack",
     img: "/certificate/thumb-1.png",
     title: "desenvolver python",
-  },
-  {
-    href: "",
-    category: "fullstack",
-    img: "/certificate/thumb-2.png",
-    title: "Desenvolvedor python e SQL",
-  },
-  {
-    href: "",
-    category: "fullstack",
-    img: "/certificate/thumb-2.png",
-    title: "Desenvolvedor python e SQL",
   },
 ];
 

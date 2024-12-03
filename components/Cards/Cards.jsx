@@ -2,7 +2,16 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import { FaHtml5, FaCss3, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+  FaComment,
+  FaUsers,
+  FaWrench,
+} from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiVisualstudio } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
@@ -50,9 +59,9 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
 
-  //skills
+  //hard skills
   {
-    type: "skills",
+    type: "hard skills",
     name: "Html 5",
     icon: <FaHtml5 />,
     duration: "apredindo em 2023",
@@ -60,7 +69,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "Css 3",
     icon: <FaCss3 />,
     duration: "apredindo em 2023",
@@ -68,7 +77,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "JavaScript",
     icon: <FaJs />,
     duration: "apredindo em 2023",
@@ -76,7 +85,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "Node.js",
     icon: <FaNodeJs />,
     duration: "apredindo em 2023",
@@ -84,7 +93,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "React",
     icon: <FaReact />,
     duration: "apredindo em 2023",
@@ -92,7 +101,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "Tailwind",
     icon: <SiTailwindcss />,
     duration: "apredindo em 2024",
@@ -100,7 +109,7 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "Next.js",
     icon: <SiNextdotjs />,
     duration: "apredindo em 2024",
@@ -108,9 +117,35 @@ const journey = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
   {
-    type: "skills",
+    type: "hard skills",
     name: "Visual Studio Code",
     icon: <SiVisualstudio />,
+    duration: "apredindo em 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
+  },
+
+  //soft skills
+  {
+    type: "soft skills",
+    name: "Comunicação",
+    icon: <FaComment />,
+    duration: "apredindo em 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
+  },
+  {
+    type: "soft skills",
+    name: "Trabalho em equipe",
+    icon: <FaUsers />,
+    duration: "apredindo em 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
+  },
+  {
+    type: "soft skills",
+    name: "Resolução de problemas",
+    icon: <FaWrench />,
     duration: "apredindo em 2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
@@ -131,10 +166,10 @@ const Cards = () => {
           <TabsTrigger value="courses" className="w-[120px]">
             Cursos
           </TabsTrigger>
-          <TabsTrigger value="skills" className="w-[120px]">
-            Skills
+          <TabsTrigger value="hard skills" className="w-[120px]">
+            Hard skills
           </TabsTrigger>
-          <TabsTrigger value="/" className="w-[120px]">
+          <TabsTrigger value="soft skills" className="w-[120px]">
             Soft skills
           </TabsTrigger>
         </TabsList>
@@ -183,8 +218,8 @@ const Cards = () => {
           </ScrollArea>
         </TabsContent>
 
-        {/* skill */}
-        <TabsContent value="skills" className="w-full">
+        {/*hard skill */}
+        <TabsContent value="hard skills" className="w-full">
           <ScrollArea className="h-[480px] p-3">
             <AnimatePresence>
               <motion.div
@@ -195,7 +230,29 @@ const Cards = () => {
               >
                 <div className="grid">
                   {journey
-                    .filter((item) => item.type === "skills")
+                    .filter((item) => item.type === "hard skills")
+                    .map((card, index) => {
+                      return <Card key={index} {...card} />;
+                    })}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </ScrollArea>
+        </TabsContent>
+
+        {/*soft skill */}
+        <TabsContent value="soft skills" className="w-full">
+          <ScrollArea className="h-[480px] p-3">
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="grid">
+                  {journey
+                    .filter((item) => item.type === "soft skills")
                     .map((card, index) => {
                       return <Card key={index} {...card} />;
                     })}
