@@ -16,7 +16,7 @@ const Mobile = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-32 mb-40 text-center">
+        <div className="mt-20 mb-28 text-center">
           <Logo />
         </div>
         {/* nav */}
