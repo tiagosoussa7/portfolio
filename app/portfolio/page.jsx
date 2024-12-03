@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import {
   Tooltip,
   TooltipContent,
@@ -31,6 +31,7 @@ const projects = [
     image: "/portfolio/thumb-1.png",
     live: "",
     github: "",
+    linkedIn: "",
   },
   {
     num: "02",
@@ -42,65 +43,7 @@ const projects = [
     image: "/portfolio/thumb-2.png",
     live: "",
     github: "",
-  },
-  {
-    num: "03",
-    category: "fullstack",
-    title: "projeto 3",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
-    stack: [
-      { name: "Html 5" },
-      { name: "Next.js" },
-      { name: "Java" },
-      { name: "Tailwind.css" },
-    ],
-    image: "/portfolio/thumb-3.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "power bi",
-    title: "projeto 4",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
-    stack: [{ name: "Html 5" }, { name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/portfolio/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "05",
-    category: "backend",
-    title: "projeto 5",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
-    stack: [
-      { name: "Html 5" },
-      { name: "Next.js" },
-      { name: "Java" },
-      { name: "Tailwind.css" },
-    ],
-    image: "/portfolio/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "06",
-    category: "fullstack",
-    title: "projeto 6",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
-    stack: [
-      { name: "Html 5" },
-      { name: "Next.js" },
-      { name: "JavaScript" },
-      { name: "Tailwind.css" },
-    ],
-    image: "/portfolio/thumb3.png",
-    live: "",
-    github: "",
+    linkedIn: "",
   },
 ];
 
@@ -182,6 +125,20 @@ const Portfolio = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+
+                {/* linkedIn project button */}
+                <Link href={project.linkedIn}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-secondary flex justify-center items-center group">
+                        <BsLinkedin className="text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>publicação</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
               </div>
             </div>
           </div>
@@ -205,7 +162,7 @@ const Portfolio = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-contain"
+                          className="object-contain rounded-[6px]"
                           alt=""
                         />
                       </div>
@@ -218,7 +175,7 @@ const Portfolio = () => {
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 
                 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent-hover hover:bg-accent
+                btnStyles="bg-accent-hover rounded-[6px] hover:bg-accent
                 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>

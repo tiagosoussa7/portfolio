@@ -44,7 +44,7 @@ const About = () => {
                 {/* rotating shape */}
                 <div
                   className="absolute top-2/4 -right-[65px] flex items-center
-              justify-center"
+                  justify-center"
                 >
                   <Image src="/img0.png" width={200} height={200} alt="" />
 
