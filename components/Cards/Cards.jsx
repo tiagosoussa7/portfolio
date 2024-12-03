@@ -24,7 +24,7 @@ const journey = [
     type: "graduation",
     institution: "Unicesumar",
     logoUrl: "/resume/logo-unicesumar.png",
-    position: "Anásile de sistemas",
+    position: "Análise de sistemas",
     duration: "Abr 2022 - Ago 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
@@ -159,17 +159,17 @@ const Cards = () => {
         defaultValue="graduation"
         className="w-full flex flex-col items-center"
       >
-        <TabsList className="max-w-max mb-[30px]">
-          <TabsTrigger value="graduation" className="w-[120px]">
+        <TabsList className="grid grid-cols-2 md:grid-cols-4 max-w-max mb-[20px]">
+          <TabsTrigger value="graduation" className="">
             Graduações
           </TabsTrigger>
-          <TabsTrigger value="courses" className="w-[120px]">
+          <TabsTrigger value="courses" className="">
             Cursos
           </TabsTrigger>
-          <TabsTrigger value="hard skills" className="w-[120px]">
+          <TabsTrigger value="hard skills" className="">
             Hard skills
           </TabsTrigger>
-          <TabsTrigger value="soft skills" className="w-[120px]">
+          <TabsTrigger value="soft skills" className="">
             Soft skills
           </TabsTrigger>
         </TabsList>

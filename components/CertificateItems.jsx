@@ -22,7 +22,9 @@ const CertificateItems = ({ href, category, img, title }) => {
       </div>
       <div className="flex items-center justify-center">
         <div className="flex p-2">
-          <h2 className="font-secondary text-[16px] text-accent">{title}</h2>
+          <h2 className="font-secondary sm:text-[16px] text-xs  text-accent">
+            {title}
+          </h2>
         </div>
         <button className="bg-accent text-primary rounded-full w-[28px] h-[28px] flex items-center justify-center -rotate-45 group-hover:rotate-0 transition-all duration-500">
           <FiArrowRight className="text-2xl" />
