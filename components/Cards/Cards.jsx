@@ -24,7 +24,7 @@ const journey = [
     type: "graduation",
     institution: "Unicesumar",
     logoUrl: "/resume/logo-unicesumar.png",
-    position: "Anásile e desenvolvimento de sistemas",
+    position: "Anásile de sistemas",
     duration: "Abr 2022 - Ago 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
