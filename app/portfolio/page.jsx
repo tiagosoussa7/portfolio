@@ -28,7 +28,7 @@ const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/portfolio/thumb-1.png",
+    video: "/teste0.mp4",
     live: "",
     github: "",
     linkedIn: "",
@@ -40,7 +40,7 @@ const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
     stack: [{ name: "Python" }, { name: "postgrees" }, { name: "visual code" }],
-    image: "/portfolio/thumb-2.png",
+    video: "/teste0.mp4",
     live: "",
     github: "",
     linkedIn: "",
@@ -153,17 +153,18 @@ const Portfolio = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-secondary">
+                    <div className="h-[470px] rounded-[6px] relative group flex justify-center items-center bg-secondary">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
-                      {/* image */}
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-contain rounded-[6px]"
-                          alt=""
+                      {/* video */}
+
+                      <div className="flex justify-center items-center relative p-4">
+                        <video
+                          src={project.video}
+                          loop
+                          autoPlay
+                          className="object-cover rounded-[6px]"
                         />
                       </div>
                     </div>
@@ -173,7 +174,7 @@ const Portfolio = () => {
 
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 
+                containerStyles="flex gap-2 absolute xl:left-4 left-0  bottom-[calc(50%_-_22px)] xl:bottom-16 z-20 
                 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent-hover rounded-[6px] hover:bg-accent
                 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
