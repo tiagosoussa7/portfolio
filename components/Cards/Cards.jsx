@@ -23,7 +23,7 @@ const journey = [
   {
     type: "graduation",
     institution: "Unicesumar",
-    logoUrl: "/resume/logo-unicesumar.png",
+    logoUrl: "/qualification/logo-unicesumar.png",
     position: "Análise de sistemas",
     duration: "Abr 2022 - Ago 2024",
     description:
@@ -32,9 +32,18 @@ const journey = [
   {
     type: "graduation",
     institution: "Estácio - Fic",
-    logoUrl: "/resume/ficEstacio-logo.png",
+    logoUrl: "/qualification/ficEstacio-logo.png",
     position: "Banco de dados",
     duration: "Ago 2023 - Dec 2025",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
+  },
+  {
+    type: "graduation",
+    institution: "Uniasselvi",
+    logoUrl: "/qualification/logo-uni.png",
+    position: "Sistemas para internet",
+    duration: "Fev 2025 - Jun 2027",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
   },
@@ -44,7 +53,7 @@ const journey = [
     type: "courses",
     institution: "Cubos Academy",
     logoUrl: "/resume/cubos-logo.png",
-    qualification: "Desenvolvedor Back-End JavaScript",
+    qualification: "Back-End JavaScript",
     duration: "Ago 2023 - Dec 2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
@@ -53,7 +62,7 @@ const journey = [
     type: "courses",
     institution: "Dio",
     logoUrl: "/resume/logo-dio.png",
-    qualification: "Desenvolvedor Front-end JavaScript",
+    qualification: "Front-end JavaScript",
     duration: "Out 2024 - Dec 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque in earum assumenda atque cum nisi iste distinctio, aliquid.",
